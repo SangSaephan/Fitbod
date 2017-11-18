@@ -12,9 +12,14 @@
 		4E0FCDAC1FBD892C007B06FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E0FCDAA1FBD892C007B06FB /* Main.storyboard */; };
 		4E0FCDAE1FBD892C007B06FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E0FCDAD1FBD892C007B06FB /* Assets.xcassets */; };
 		4E0FCDB11FBD892C007B06FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E0FCDAF1FBD892C007B06FB /* LaunchScreen.storyboard */; };
+		4E0FCDBD1FBD8F19007B06FB /* workoutData.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4E0FCDBC1FBD8E52007B06FB /* workoutData.txt */; };
+		4EB0A8F01FBE031D006585C3 /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0A8EF1FBE031D006585C3 /* ExerciseCell.swift */; };
+		4EB0A8F31FBEDB06006585C3 /* PlotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB0A8F21FBEDB06006585C3 /* PlotViewController.swift */; };
+		DC95EF16D06D59F6D7C07A1D /* Pods_Fitbod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8A7D650178830DB1D976C8 /* Pods_Fitbod.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E8A7D650178830DB1D976C8 /* Pods_Fitbod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fitbod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E0FCDA31FBD892C007B06FB /* Fitbod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitbod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E0FCDA61FBD892C007B06FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4E0FCDA81FBD892C007B06FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,11 @@
 		4E0FCDAD1FBD892C007B06FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E0FCDB01FBD892C007B06FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E0FCDB21FBD892C007B06FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E0FCDBC1FBD8E52007B06FB /* workoutData.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = workoutData.txt; sourceTree = "<group>"; };
+		4EB0A8EF1FBE031D006585C3 /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
+		4EB0A8F21FBEDB06006585C3 /* PlotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlotViewController.swift; sourceTree = "<group>"; };
+		D1E58DE92B62B4466A9266B7 /* Pods-Fitbod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitbod.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fitbod/Pods-Fitbod.release.xcconfig"; sourceTree = "<group>"; };
+		FDDE737FBBCD2235A85B2432 /* Pods-Fitbod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fitbod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fitbod/Pods-Fitbod.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC95EF16D06D59F6D7C07A1D /* Pods_Fitbod.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				4E0FCDA51FBD892C007B06FB /* Fitbod */,
 				4E0FCDA41FBD892C007B06FB /* Products */,
+				73E7B1D79C715BF74D85A470 /* Pods */,
+				8DD06405D31B20E54CCB9519 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +67,66 @@
 		4E0FCDA51FBD892C007B06FB /* Fitbod */ = {
 			isa = PBXGroup;
 			children = (
-				4E0FCDA61FBD892C007B06FB /* AppDelegate.swift */,
-				4E0FCDA81FBD892C007B06FB /* ViewController.swift */,
-				4E0FCDAA1FBD892C007B06FB /* Main.storyboard */,
-				4E0FCDAD1FBD892C007B06FB /* Assets.xcassets */,
-				4E0FCDAF1FBD892C007B06FB /* LaunchScreen.storyboard */,
 				4E0FCDB21FBD892C007B06FB /* Info.plist */,
+				4E0FCDB81FBD8986007B06FB /* Model */,
+				4E0FCDB91FBD89A7007B06FB /* View */,
+				4E0FCDBA1FBD89AC007B06FB /* Controller */,
+				4E0FCDBB1FBD89B9007B06FB /* Supporting Files */,
 			);
 			path = Fitbod;
+			sourceTree = "<group>";
+		};
+		4E0FCDB81FBD8986007B06FB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4E0FCDB91FBD89A7007B06FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4EB0A8EF1FBE031D006585C3 /* ExerciseCell.swift */,
+				4E0FCDAA1FBD892C007B06FB /* Main.storyboard */,
+				4E0FCDAD1FBD892C007B06FB /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4E0FCDBA1FBD89AC007B06FB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4E0FCDA61FBD892C007B06FB /* AppDelegate.swift */,
+				4E0FCDA81FBD892C007B06FB /* ViewController.swift */,
+				4EB0A8F21FBEDB06006585C3 /* PlotViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4E0FCDBB1FBD89B9007B06FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4E0FCDBC1FBD8E52007B06FB /* workoutData.txt */,
+				4E0FCDAF1FBD892C007B06FB /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		73E7B1D79C715BF74D85A470 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FDDE737FBBCD2235A85B2432 /* Pods-Fitbod.debug.xcconfig */,
+				D1E58DE92B62B4466A9266B7 /* Pods-Fitbod.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8DD06405D31B20E54CCB9519 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E8A7D650178830DB1D976C8 /* Pods_Fitbod.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +136,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E0FCDB51FBD892C007B06FB /* Build configuration list for PBXNativeTarget "Fitbod" */;
 			buildPhases = (
+				5C8A5D1C71E25F08CC37F394 /* [CP] Check Pods Manifest.lock */,
 				4E0FCD9F1FBD892C007B06FB /* Sources */,
 				4E0FCDA01FBD892C007B06FB /* Frameworks */,
 				4E0FCDA11FBD892C007B06FB /* Resources */,
+				E57DD2D6713C6EF51C75E8F6 /* [CP] Embed Pods Frameworks */,
+				202756452E435E2ECB7A4BC7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,11 +193,60 @@
 			files = (
 				4E0FCDB11FBD892C007B06FB /* LaunchScreen.storyboard in Resources */,
 				4E0FCDAE1FBD892C007B06FB /* Assets.xcassets in Resources */,
+				4E0FCDBD1FBD8F19007B06FB /* workoutData.txt in Resources */,
 				4E0FCDAC1FBD892C007B06FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		202756452E435E2ECB7A4BC7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fitbod/Pods-Fitbod-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C8A5D1C71E25F08CC37F394 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E57DD2D6713C6EF51C75E8F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fitbod/Pods-Fitbod-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4E0FCD9F1FBD892C007B06FB /* Sources */ = {
@@ -137,7 +254,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E0FCDA91FBD892C007B06FB /* ViewController.swift in Sources */,
+				4EB0A8F31FBEDB06006585C3 /* PlotViewController.swift in Sources */,
 				4E0FCDA71FBD892C007B06FB /* AppDelegate.swift in Sources */,
+				4EB0A8F01FBE031D006585C3 /* ExerciseCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +391,7 @@
 		};
 		4E0FCDB61FBD892C007B06FB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDDE737FBBCD2235A85B2432 /* Pods-Fitbod.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +406,7 @@
 		};
 		4E0FCDB71FBD892C007B06FB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1E58DE92B62B4466A9266B7 /* Pods-Fitbod.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

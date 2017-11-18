@@ -1,0 +1,6 @@
+framework module Pods_Fitbod {
+  umbrella header "Pods-Fitbod-umbrella.h"
+
+  export *
+  module * { export * }
+}
